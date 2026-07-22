@@ -131,4 +131,11 @@ public partial class StorageService
             updatedLines
         );
     }
+
+    public List<User> Where(Func<User, bool> predicate)
+    {
+        return GetUsers()
+            .Where(predicate)
+            .ToList();
+    }
 }
