@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
+            username = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            password = new TextBox();
             label2 = new Label();
             button1 = new Button();
             label3 = new Label();
@@ -49,14 +49,13 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
-            // textBox1
+            // username
             // 
-            textBox1.Location = new Point(64, 209);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(272, 32);
-            textBox1.TabIndex = 0;
+            username.Location = new Point(64, 209);
+            username.Name = "username";
+            username.Size = new Size(272, 32);
+            username.TabIndex = 0;
             // 
             // label1
             // 
@@ -67,12 +66,12 @@
             label1.TabIndex = 2;
             label1.Text = "نام کاربری";
             // 
-            // textBox2
+            // password
             // 
-            textBox2.Location = new Point(64, 292);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(272, 32);
-            textBox2.TabIndex = 1;
+            password.Location = new Point(64, 292);
+            password.Name = "password";
+            password.Size = new Size(272, 32);
+            password.TabIndex = 1;
             // 
             // label2
             // 
@@ -94,6 +93,7 @@
             button1.TabIndex = 2;
             button1.Text = "ورود";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -118,8 +118,8 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(password);
+            Controls.Add(username);
             Controls.Add(pictureBox1);
             Font = new Font("Vazirmatn", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 5, 4, 5);
@@ -133,9 +133,9 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private TextBox username;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox password;
         private Label label2;
         private Button button1;
         private Label label3;
