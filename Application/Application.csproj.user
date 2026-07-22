@@ -10,5 +10,11 @@
     <Compile Update="Pages\Authentication\RegisterPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Pages\Dashboard\DashboardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Shared\Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
