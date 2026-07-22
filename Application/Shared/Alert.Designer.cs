@@ -89,23 +89,22 @@
             // 
             // messagelbl
             // 
-            messagelbl.AutoSize = true;
             messagelbl.Font = new Font("Vazirmatn", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            messagelbl.Location = new Point(75, 52);
+            messagelbl.Location = new Point(22, 52);
             messagelbl.Name = "messagelbl";
             messagelbl.RightToLeft = RightToLeft.Yes;
-            messagelbl.Size = new Size(251, 41);
+            messagelbl.Size = new Size(304, 41);
             messagelbl.TabIndex = 2;
             messagelbl.Text = "این یک پیام ساده است.";
             // 
             // descriptionlbl
             // 
-            descriptionlbl.Font = new Font("Vazirmatn", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            descriptionlbl.Font = new Font("Vazirmatn", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             descriptionlbl.ForeColor = Color.DimGray;
-            descriptionlbl.Location = new Point(22, 93);
+            descriptionlbl.Location = new Point(22, 99);
             descriptionlbl.Name = "descriptionlbl";
             descriptionlbl.RightToLeft = RightToLeft.Yes;
-            descriptionlbl.Size = new Size(304, 98);
+            descriptionlbl.Size = new Size(304, 92);
             descriptionlbl.TabIndex = 2;
             descriptionlbl.Text = "این نمونه ای از توضیحات لازم برای این قسمت است به نظر شما چه بخش های دیگری میتوند اضافه شود ؟";
             // 
@@ -127,7 +126,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
