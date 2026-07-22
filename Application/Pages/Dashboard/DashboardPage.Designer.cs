@@ -34,12 +34,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(466, 271);
+            label1.Font = new Font("Vazirmatn", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(444, 246);
             label1.Name = "label1";
-            label1.Size = new Size(104, 25);
+            label1.Size = new Size(104, 46);
             label1.TabIndex = 0;
-            label1.Text = "Dashboard";
+            label1.Text = "داشبورد";
             // 
             // DashboardPage
             // 
@@ -48,6 +48,7 @@
             Controls.Add(label1);
             Name = "DashboardPage";
             Size = new Size(1017, 540);
+            Load += DashboardPage_Load;
             ResumeLayout(false);
             PerformLayout();
         }

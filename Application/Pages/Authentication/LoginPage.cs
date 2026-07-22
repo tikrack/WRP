@@ -33,6 +33,11 @@ namespace Application.Pages.Authentication
         {
             var users = storageService.Where(user => user.UserName == username.Text);
 
+            if(users.Count > 1)
+            {
+                throw new Exception("System runtime error.");
+            }
+
             if(users.Count < 1 || password.Text != users[0].Password)
             {
                 Alert.Show(
@@ -42,6 +47,8 @@ namespace Application.Pages.Authentication
                 );
                 return;
             }
+
+            CurrentUserStorage.User = users[0];
 
             NavigationService.Navigate(new DashboardPage());
         }
